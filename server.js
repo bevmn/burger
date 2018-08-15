@@ -18,6 +18,7 @@ app.use(bodyParser.json());
 // Static directory to be served
 app.use(express.static("app/public"));
 
+require('./controllers/burgers_controller.js')
 // Routes
 // =============================================================
 //equire("./app/routes/api-routes.js")(app);

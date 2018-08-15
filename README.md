@@ -1,7 +1,7 @@
 # Burger Database
 
 * Creating and Seeding the database
-    | id | burger_name            | Devoured | 
+    | id | burger_name            | devoured | 
     | -- | ----------------------- | ---------- 
     | 1  | Fireball                | yes         
     | 2  | Cheddar Delight         | no         

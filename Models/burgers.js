@@ -7,7 +7,7 @@ var Sequelize = require("sequelize");
 var sequelize = require("../config/connection.js");
 
 // Creates a "Character" model that matches up with DB
-var Character = sequelize.define("character", {
+var Character = sequelize.define("burger", {
   // the routeName gets saved as a string
   routeName: Sequelize.STRING,
   // the name of the character (a string)
@@ -21,7 +21,7 @@ var Character = sequelize.define("character", {
 });
 
 // Syncs with DB
-Character.sync();
+burger.sync();
 
 // Makes the Character Model available for other files (will also create a table)
-module.exports = Character;
+module.exports = burger;

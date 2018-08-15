@@ -9,7 +9,7 @@ var connection = require("./connection.js");
 // ORM
 // =============================================================
 
-var tableName = "allcharacters";
+var tableName = "burgers";
 
 var orm = {
   // Here our ORM is creating a simple method for performing a query of the entire table.
@@ -42,9 +42,9 @@ var orm = {
     var routeName = character.name.replace(/\s+/g, "").toLowerCase();
     console.log(routeName);
 
-    var s = "INSERT INTO " + tableName + " (routeName, name, role, age, forcePoints) VALUES (?,?,?,?,?)";
+    var s = "INSERT INTO " + tableName + " (burger, devoured) VALUES (?,?)";
 
-    connection.query(s, [routeName, character.name, character.role, character.age, character.forcePoints], function(
+    connection.query(s, [burger, devoured], function(
       err,
       result
     ) {
